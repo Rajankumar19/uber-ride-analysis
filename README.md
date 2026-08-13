@@ -1,148 +1,290 @@
-# 🚕 Uber Ride Analysis
+🚕 Uber Ride Analysis
 
-A data analytics project using **MySQL, Excel, and Power BI** to analyze Uber ride bookings, cancellations, customer behavior, vehicle performance, and revenue.
+A data analytics project using MySQL, Excel, and Power BI to analyze Uber ride bookings, cancellations, customer behavior, vehicle performance, ratings, locations, and revenue.
 
-## 📌 Project Overview
+📌 Project Overview
 
-This project analyzes **9,996 unique Uber ride bookings** from the cleaned dataset. The analysis covers ride success, customer and driver cancellations, vehicle performance, ratings, booking value, incomplete rides, and pickup-location performance.
+This project analyzes 10,000 Uber ride-booking records from the provided dataset.
 
-**Workflow:** Raw Data → Data Cleaning → SQL Analysis → Power BI Dashboard → Business Insights
+The analysis covers:
 
-## 🎯 Business Objectives
+Successful bookings
 
-- Measure successful ride performance
-- Understand customer and driver cancellation patterns
-- Identify top customers by ride volume
-- Compare vehicle types by distance, ratings, and revenue
-- Analyze high-value rides
-- Identify common incomplete-ride reasons
-- Find top pickup locations by successful ride volume and revenue
+Customer and driver cancellations
 
-## 🗂️ Dataset
+Vehicle performance
 
-| Metric | Value |
-|---|---:|
-| Raw Bookings | 10,000 |
-| Cleaned Unique Bookings | 9,996 |
-| Successful Bookings | 6,228 |
-| Driver Cancellations | 1,807 |
-| Incomplete Bookings | 1,249 |
-| Customer Cancellations | 712 |
-| Vehicle Types | 6 |
+Customer and driver ratings
 
-The original dataset contained duplicate booking IDs. After data validation, **4 duplicate records were removed**, leaving 9,996 unique bookings for analysis.
+Booking value and revenue contribution
 
-### Booking Statuses
+Incomplete rides
 
-- Success
-- Cancelled by Driver
-- Cancelled by Customer
-- Incomplete
+Pickup-location performance
 
-## 🛠️ Tools & Skills
+Customer booking behavior
 
-**Tools:**
+Workflow: Raw Data → Data Validation → SQL Analysis → Power BI Dashboard → Business Insights
 
-- MySQL
-- Microsoft Excel
-- Power BI
+🎯 Business Objectives
 
-**SQL techniques:**
+Measure successful ride performance
 
-- Data validation
-- Filtering and aggregation
-- GROUP BY
-- CASE statements
-- Subqueries
-- COUNT, SUM, AVG, MIN, MAX
-- Percentage calculations
-- Date and time analysis
-- Customer analysis
-- Vehicle performance analysis
-- Revenue analysis
+Understand customer and driver cancellation patterns
 
-**Power BI:**
+Identify high-volume customers
 
-- KPI reporting
-- Interactive dashboarding
-- Vehicle and category comparisons
-- Cancellation analysis
-- Location analysis
-- Business-focused data visualization
+Compare vehicle types by distance, ratings, booking volume, and revenue
 
-## 🔍 SQL Analysis
+Identify high-value bookings
 
-The project contains **10 core business questions** covering:
+Understand common incomplete-ride reasons
 
-1. Successful bookings
-2. Average ride distance by vehicle type
-3. Customer cancellation percentage
-4. Top 5 customers by ride count
-5. Driver cancellation reasons
-6. Customer vs. driver ratings by vehicle type
-7. Revenue performance by vehicle type
-8. Top 10 highest-value successful rides
-9. Incomplete rides by reason
-10. Top pickup locations by successful ride volume and revenue
+Identify high-performing pickup locations
 
-Additional SQL analysis covers overall booking-status distribution, cancellation rates, revenue contribution by vehicle type, and pickup-location performance.
+🗂️ Dataset
 
-## 📊 Key Business Areas
+Metric
 
-### Ride Performance
+Value
 
-Analyze successful rides and compare ride distance across vehicle types.
+Total Booking Records
 
-### Cancellation Analysis
+10,000
 
-Identify customer cancellation levels and the main reasons behind driver cancellations.
+Successful Bookings
 
-### Customer Behavior
+6,231
 
-Identify the customers generating the highest number of bookings.
+Driver Cancellations
 
-### Vehicle Performance
+1,808
 
-Compare vehicle types using ride distance, customer ratings, driver ratings, successful rides, and booking value.
+Incomplete Bookings
 
-### Revenue
+1,249
 
-Analyze total and average booking value for successful rides and identify high-value bookings.
+Customer Cancellations
 
-### Location Performance
+712
 
-Identify pickup locations generating the highest successful ride volume and booking value.
+Vehicle Types
 
-## 📸 Power BI Dashboard
+6
 
-Power BI screenshots can be added here to showcase the dashboard and key business insights.
+Vehicle Types
 
-## 📁 Repository Structure
+Auto
 
-```text
+Bike Lite
+
+Auto Sharing
+
+Bike
+
+Cab Economy
+
+Cab Premium
+
+Booking Statuses
+
+Success
+
+Cancelled by Driver
+
+Cancelled by Customer
+
+Incomplete
+
+Data Validation Note
+
+The dataset contains 4 Booking IDs that appear more than once. These records were not removed, because the repeated IDs correspond to different booking records with different dates, customers, statuses, locations, or booking values.
+
+This was treated as a data-quality observation rather than automatically deleting potentially valid records.
+
+🛠️ Tools & Skills
+
+Tools
+
+MySQL
+
+Microsoft Excel
+
+Power BI
+
+SQL Techniques
+
+Data validation
+
+Filtering
+
+GROUP BY
+
+Aggregate functions
+
+CASE statements
+
+Subqueries
+
+COUNT, SUM, AVG, MIN, MAX
+
+Percentage calculations
+
+Customer analysis
+
+Vehicle performance analysis
+
+Cancellation analysis
+
+Revenue analysis
+
+Location analysis
+
+Power BI
+
+KPI reporting
+
+Interactive dashboarding
+
+Vehicle performance analysis
+
+Revenue analysis
+
+Cancellation analysis
+
+Rating analysis
+
+Location analysis
+
+Business-focused visualization
+
+🔍 SQL Analysis
+
+The project contains 15 business-focused SQL analyses:
+
+Retrieve successful bookings
+
+Average ride distance by vehicle type
+
+Customer cancellation percentage
+
+Top 5 customers by booking volume
+
+Driver cancellation reasons
+
+Customer vs. driver ratings by vehicle type
+
+Revenue performance by vehicle type
+
+Top 10 highest-value successful bookings
+
+Incomplete bookings by reason
+
+Top pickup locations by successful booking volume and revenue
+
+Overall booking performance by status
+
+Success and cancellation performance by vehicle type
+
+Overall driver cancellation rate
+
+Revenue contribution by vehicle type
+
+Top pickup locations by total booking volume
+
+📊 Key Business Areas
+
+🚗 Vehicle Performance
+
+Compare vehicle types using ride distance, customer ratings, driver ratings, successful booking volume, and booking value.
+
+❌ Cancellation Analysis
+
+Identify the scale and reasons behind customer and driver cancellations.
+
+👥 Customer Behavior
+
+Identify customers with the highest booking volume and analyze high-value bookings.
+
+💰 Revenue Analysis
+
+Measure total and average booking value for successful bookings and compare revenue contribution across vehicle types.
+
+📍 Location Performance
+
+Identify pickup locations generating the highest successful booking volume and booking value.
+
+⭐ Service Quality
+
+Compare customer and driver ratings across vehicle types.
+
+📸 Power BI Dashboard
+
+The Power BI analysis is presented through dashboard screenshots covering key business areas.
+
+Revenue by Vehicle
+
+
+
+Pickup Location Performance
+
+
+
+Vehicle Ratings
+
+
+
+Driver Cancellation Reasons
+
+
+
+Highest-Value Bookings
+
+
+
+📁 Repository Structure
+
 uber-ride-analysis/
 │
 ├── README.md
+│
 ├── data/
 │   └── uber_data.csv
+│
 ├── sql/
 │   └── uber_ride_analysis.sql
+│
 └── screenshots/
-    ├── vehicle-performance.png
-    ├── cancellation-analysis.png
-    ├── revenue-analysis.png
-    └── location-analysis.png
-```
+    ├── revenue-by-vehicle.png
+    ├── pickup-location-performance.png
+    ├── vehicle-ratings.png
+    ├── driver-cancellation-reasons.png
+    └── highest-value-rides.png
 
-## 💡 Business Value
+💡 Business Value
 
-This project demonstrates how raw ride-booking data can be transformed into **validated data, SQL-based analysis, interactive Power BI reporting, and actionable business insights**.
+This project demonstrates how raw ride-booking data can be transformed into validated data, SQL-based analysis, interactive Power BI reporting, and actionable business insights.
 
-The analysis can support decisions around vehicle allocation, cancellation reduction, customer retention, operational capacity, and revenue optimization.
+The analysis can support decisions around:
 
-## 👤 Author
+Vehicle allocation
 
-**Rajan Kumar**  
+Cancellation reduction
+
+Customer retention
+
+Operational capacity
+
+Service quality
+
+Revenue optimization
+
+Pickup-location performance
+
+👤 Author
+
+Rajan Kumar
 Data Analyst | SQL | Power BI | Excel | Python
 
+Open to Data Analyst, Business Analyst, and BI Analyst opportunities.
 Open to Data Analyst, Business Analyst, and BI Analyst opportunities.
